@@ -212,7 +212,7 @@ function showControlPanel() {
     const formSheld = document.getElementById('form_sheld');
     const sendForm = document.getElementById('send_form');
     if (formSheld && sendForm) {
-        formSheld.insertBefore(panel, sendForm);
+        sendForm.parentNode.insertBefore(panel, sendForm);
     } else {
         document.body.appendChild(panel);
     }
